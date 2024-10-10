@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta nam="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte</title>
+    <link rel="stylesheet" href="/css/suporte.css">
+</head>
+<body>
+
+ <!--esta DIV e o cabeçalho do site-->
+ <div class="container">
+    <nav class="nav-header">
+        <!--esta imagem será substituida pelo logo que ainda criaremos-->
+        <a href="/home/home.html">
+            <img class="logo" src="/img/logo-prov.png">
+        </a>
+
+        <!--caixa de pesquisa-->
+        <div class="searchBox">
+            <!--input que permite escrever na caixa de pesquisa e dentro a imagm da lupa-->
+            <input type="text" class="searchText" placeholder="Pesquisar...">
+            <a href="#" class="searchButton">
+                <img src="/img/loupe-branco.png" alt="Lupa" width="20px" height="20px">
+            </a>
+        </div>
+
+        <!--Botão de login-->
+        <div class="btn-login">
+            <a href="/pages/login.html">Login</a>
+        </div>
+        <div class="btn-carrinho">
+            <a href="/pages/carrinho.html"><img class="carrinho"
+                    src="/img/shopping_cart_market_ecommerce_shop_icon_181465.png"></a>
+        </div>
+    </nav>
+
+    <!--nesta DIV estão os botões da partede baixo do site-->
+    <div class="banner">
+        <div class="btn-banner">
+            <ul>
+                <li>
+                    <a href="/pages/catalogo.html">Catalógo</a>
+                </li>
+                <li>
+                    <a href="/pages/sobre.html">Sobre</a>
+                </li>
+                <li>
+                    <a href="/pages/vender.html">Vender</a>
+                </li>
+                <li>
+                    <a href="/pages/suporte.html">Suporte</a>
+                </li>
+                <li>
+                    <a href="/pages/contato.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Aqui começa a tela de suporte-->
+    <header class="had">
+        <h1>Central de Suporte</h1>
+        <nav>
+            <a href="#faq">Perguntas Frequentes</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="faq">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-item">
+                <h3>Como posso redefinir minha senha?</h3>
+                <p>Para redefinir sua senha, clique em "Esqueci minha senha" na página de login.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Onde posso encontrar minha fatura?</h3>
+                <p>Você pode encontrar sua fatura na seção "Minha Conta" após fazer login.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Como posso entrar em contato com o suporte?</h3>
+                <p>Você pode usar o formulário abaixo para entrar em contato com nossa equipe de suporte.</p>
+            </div>
+        </section>
+
+        <div id="contato">
+            <h2>Entre em Contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

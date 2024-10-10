@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*animação de surgimento pela esquerda*/
+@keyframes surgirEsquerda {
+    from {
+        opacity: 0;
+        translate: -100vw 0;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+.container {
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+/*essa DIV é a principal do cabeçalho, tá tudo aqui dentro*/
+.nav-header {
+    background:#000000;
+    width: 100%;
+    height:80px;
+    display: flex;
+}
+
+/* aqui é a imagem da logo, coloquei a "position: absolute;"
+ porque ai da pra colocar a logo onde quiser*/
+ .nav-header .logo {
+    width: 180px;
+    height: 50px;
+    padding-left: 10%;
+    padding-top: 5%;
+    transition: 0.4s;
+    
+}
+/*animação da logo pra qunado passar o mause a imagem sobe um pouco*/
+.nav-header .logo:hover {
+    padding-top: 4%;
+}
+
+.searchBox {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, -2%);
+    background: #232f3e;
+    height: 30px;
+    padding: 10px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchText {
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    font: 10px;
+    line-height: 30px;
+    width: 400px;
+    transition: 0.3s;
+}
+
+.searchButton {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*essa é a DIV dos botões da parte de cima*/
+.banner {
+    width: 100%;
+    height: 40px;
+    background: #232f3e;    
+    display: flex;
+    justify-content: center;
+}
+
+/*essa DIV ta dentro de "botoesHead" ela tem ointuito de organizar melhor
+essa parte, se mais pra frente quisermos colocar outros botões com categorias
+diferentes podemos colocar outra DIV*/
+.btn-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-banner ul {
+    list-style: none;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*estilização do texto dos botões*/
+.btn-banner ul li a {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+    width: 70px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.26s;
+} 
+
+/*essa é só uma animação para deixar os botões bonitinhos*/
+.btn-banner ul li a:hover {
+    border: 1px solid #ffffff;
+    width: 80px;
+    background-color: #ffffff;
+    color: #215779;
+}
+
+/*definição da posição do botão de login*/
+.btn-login {
+    padding-left:75%;
+    padding-top: 2%;
+}
+
+/*estilização do texto do botão de login*/
+.btn-login a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+/*animação do botão de login*/
+.btn-login a:hover {
+    color: #000000;
+    background: #ffffff;
+}
+
+.btn-carrinho {
+    margin-top: 22px;
+    margin-left: 25px;
+    width: 30px;
+    height: 30px;
+}
+
+.btn-carrinho:hover {
+    margin-top: 21px;
+    margin-left: 24px;
+    width: 32px;
+    height: 32px;
+}
+
+.btn-carrinho img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.main {
+   
+    gap: 20px;
+    display: flex;
+    
+    background-color:#f2f2f2 ;
+    height: 600px;
+    width: 100%;
+}
+
+table {
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    width: 700px;
+    margin-top: 75px;
+    margin-left: 40px;
+
+}
+
+
+
+
+.containerBox2 {
+    display: block;
+    justify-content: center;
+    padding: 40%;
+    background-color: white;
+    padding-bottom: 50px;
+    margin-top: 75px;
+    margin-left: 80px;
+    margin-right: 2%;
+    width: 170px;
+    height: 200px;
+    text-align: center;
+    white-space: nowrap; /* Impede a quebra de linha no botão */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.containerBox2 .alterarcep {
+    /* Cor de fundo do botão */
+    color: #ffffff; /* Cor do texto do botão */
+    padding: 10px 10px; /* Espaçamento interno do botão */
+    width: 300px;
+    font-size: 16px; /* Tamanho da fonte do texto */
+    cursor: pointer; /* Cursor em forma de mão ao passar sobre o botão */
+    transition: background-color 1.3s; /* Transição suave na cor de fundo */
+    background: #000000;
+
+}

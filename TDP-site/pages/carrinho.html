@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="/css/carrinho.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+
+<body>
+     <!--esta DIV e o cabeçalho do site-->
+     <div class="container">
+        <nav class="nav-header">
+            <!--esta imagem será substituida pelo logo que ainda criaremos-->
+            <a href="/home/home.html">
+                <img class="logo" src="/img/logo-prov.png">
+            </a>
+
+            <!--caixa de pesquisa-->
+            <div class="searchBox">
+                <!--input que permite escrever na caixa de pesquisa e dentro a imagm da lupa-->
+                <input type="text" class="searchText" placeholder="Pesquisar...">
+                <a href="#" class="searchButton">
+                    <img src="/img/loupe-branco.png" alt="Lupa" width="20px" height="20px">
+                </a>
+            </div>
+
+            <!--Botão de login-->
+            <div class="btn-login">
+                <a href="/pages/login.html">Login</a>
+            </div>
+            <div class="btn-carrinho">
+                <a href="/pages/carrinho.html"><img class="carrinho"
+                        src="/img/shopping_cart_market_ecommerce_shop_icon_181465.png"></a>
+            </div>
+        </nav>
+
+        <!--nesta DIV estão os botões da partede baixo do site-->
+        <div class="banner">
+            <div class="btn-banner">
+                <ul>
+                    <li>
+                        <a href="/pages/catalogo.html">Catalógo</a>
+                    </li>
+                    <li>
+                        <a href="/pages/sobre.html">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="/pages/vender.html">Vender</a>
+                    </li>
+                    <li>
+                        <a href="/pages/suporte.html">Suporte</a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+   
+        <div class="main">
+            
+                <section>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Produto</th>
+                                <th>Preço</th>
+                                <th>Quantidade</th>
+                                <th>Total</th>
+                                <th>-</th>
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <td>Produto</td>
+                            <td>R$ 120</td>
+                            <td>
+                                <div class="qty">
+                                    <button>-</button>
+                                    <span>2</span>
+                                    <button>+</button>
+
+                                </div>
+                            </td>
+                            <td>R$ 240</td>
+                            <td>
+                                <button> <i class='bx bx-x'></i> </button>
+                            </td>
+                        </tbody>
+                    </table>
+                </section>
+
+
+            
+            <div>
+                <div class="containerBox2">
+                    <button class="alterarcep">Ir para o pagamento<a href="#"></a></button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
