@@ -25,14 +25,13 @@ body {
 .container {
     max-width: 2000px;
     margin: 0 auto;
-    padding: 0;
 }
 
 /*essa DIV é a principal do cabeçalho, tá tudo aqui dentro*/
 .nav-header {
     background:#000000;
     width: 100%;
-    height: 80px;
+    height:80px;
     display: flex;
     align-items: center;
 }
@@ -79,7 +78,8 @@ body {
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
+    
 }
 
 /*essa é a DIV dos botões da parte de cima*/
@@ -170,104 +170,10 @@ diferentes podemos colocar outra DIV*/
 
 
 
+/*separação página produto*/
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-.social-media a {
-    display: block;
-    margin: 5px 0;
-    color: #007bff;
-    text-decoration: none;
-}
-
-.social-media a:hover {
-    text-decoration: underline;
-}
-
-nav a {
-    color: #fff;
-    
-    text-decoration: none;
-}
-
-/*Essa main meche com toda a margin da*/
-main {
-    padding: 20px;
-}
-
-/* Essa section meche com o box do (Perguntas frequentes)*/
-section {
-    background: #fff;
-    margin: 15px 0;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* É o espaçamento entre os elementos*/
-.faq-item {
-    margin-bottom: 25px;
-}
-
-/*São as linhas que dão espaçamento*/
-.social-media h2 {
-    border-bottom: 2px solid #232f3e;
-    padding-bottom: 5px;
-}
-
-/*Esse form  meche com as caixas de texto*/
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-/*Espaçamento entre as caixas de texto*/
-label {
-    margin-top: 15px;
-}
-
-input, textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 5px;
-}
-
-button {
-    margin-top: 15px;
-    padding: 10px;
-    background: #212b36;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #263443;
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #29343f;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
 

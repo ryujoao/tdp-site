@@ -1,7 +1,17 @@
+
 * {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+button {
+    cursor: pointer;
 }
 
 /*animação de surgimento pela esquerda*/
@@ -27,6 +37,7 @@
     width: 100%;
     height:80px;
     display: flex;
+    align-items: center;
 }
 
 /* aqui é a imagem da logo, coloquei a "position: absolute;"
@@ -34,8 +45,6 @@
  .nav-header .logo {
     width: 180px;
     height: 50px;
-    padding-left: 10%;
-    padding-top: 5%;
     transition: 0.4s;
     
 }
@@ -45,9 +54,7 @@
 }
 
 .searchBox {
-    position: absolute;
-    top: 2%;
-    left: 50%;
+    margin-left: 40%;
     transform: translate(-50%, -2%);
     background: #232f3e;
     height: 30px;
@@ -88,7 +95,7 @@
     justify-content: center;
 }
 
-/*essa DIV ta dentro de "botoesHead" ela tem ointuito de organizar melhor
+/*essa DIV ta dentro de "botoesHead" ela tem o intuito de organizar melhor
 essa parte, se mais pra frente quisermos colocar outros botões com categorias
 diferentes podemos colocar outra DIV*/
 .btn-banner {
@@ -128,32 +135,30 @@ diferentes podemos colocar outra DIV*/
 
 /*definição da posição do botão de login*/
 .btn-login {
-    padding-left:75%;
-    padding-top: 2%;
+    margin-left: 20px;
 }
 
 /*estilização do texto do botão de login*/
-.btn-login a {
+.btn-login a, .btn-cadastro a {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
 }
 
 /*animação do botão de login*/
-.btn-login a:hover {
+.btn-login a:hover, .btn-cadastro a:hover {
     color: #000000;
     background: #ffffff;
 }
 
 .btn-carrinho {
-    margin-top: 22px;
     margin-left: 25px;
     width: 30px;
     height: 30px;
 }
 
 .btn-carrinho:hover {
-    margin-top: 21px;
+    margin-top: -1px;
     margin-left: 24px;
     width: 32px;
     height: 32px;
@@ -163,6 +168,12 @@ diferentes podemos colocar outra DIV*/
     width: 100%;
     height: 100%;
 }
+
+
+
+
+
+
 
 
 .main {
@@ -182,10 +193,30 @@ table {
     width: 700px;
     margin-top: 75px;
     margin-left: 40px;
+    border-collapse:collapse;
 
 }
 
-
+thead {
+    tr {
+        border-bottom: 3px solid #eee;
+        th{
+            text-align: left;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            color: #666;
+        }
+    }
+}
+tbody
+    tr{
+        border-bottom: 3px solid #eee;
+        
+        &:last-child{ border 0;}
+        td{
+            padding: 30px 0;
+        }
+    }
 
 
 .containerBox2 {
@@ -216,5 +247,38 @@ table {
     cursor: pointer; /* Cursor em forma de mão ao passar sobre o botão */
     transition: background-color 1.3s; /* Transição suave na cor de fundo */
     background: #000000;
+
+}
+.produto {
+    display: flex;
+    align-items: center;
+
+     img{
+    border-radius: 6px;
+    margin-left: 15px;
+}
+     .info{
+        margin-left: 20px;
+        .name{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .category{
+            color: #666;
+        }
+     }
+}
+
+.remove {
+    background-color: #ccc;
+    border: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
 
 }

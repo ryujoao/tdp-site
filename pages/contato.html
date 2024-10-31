@@ -1,33 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/contato.css">
     <title>Contato</title>
 </head>
-<body>
-    <div class="container">
-        <h1>Contato</h1>
-        <form action="#" method="post">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
 
-            <label for="email">E-mail:</label>
+<body>
+
+    <!--esta DIV e o cabeçalho do site-->
+    <header class="container">
+        <nav class="nav-header">
+            <!--esta imagem será substituida pelo logo que ainda criaremos-->
+            <a href="#">
+                <img class="logo" src="/img/logo-prov.png">
+            </a>
+
+            <!--caixa de pesquisa-->
+            <div class="searchBox">
+                <!--input que permite escrever na caixa de pesquisa e dentro a imagm da lupa-->
+                <input type="text" class="searchText" placeholder="Pesquisar...">
+                <a href="#" class="searchButton">
+                    <img src="/img/loupe-branco.png" alt="Lupa" width="20px" height="20px">
+                </a>
+            </div>
+
+            <!--Botão de login-->
+            <div class="btn-cadastro">
+                <a href="/pages/cadastro.html">Cadastrar</a>
+            </div>
+            
+            <div class="btn-login">
+                <a href="/pages/login.html">Login</a>
+            </div>
+
+            <div class="btn-carrinho">
+                <a href="/pages/carrinho.html"><img class="carrinho"
+                        src="/img/shopping_cart_market_ecommerce_shop_icon_181465.png"></a>
+            </div>
+        </nav>
+
+        <!--nesta DIV estão os botões da partede baixo do site-->
+        <nav class="banner">
+            <div class="btn-banner">
+                <ul>
+
+                    <li>
+                        <a href="../home/home.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/pages/catalogo.html">Catalógo</a>
+                    </li>
+                    <li>
+                        <a href="/pages/sobre.html">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="/pages/vender.html">Vender</a>
+                    </li>
+                    <li>
+                        <a href="/pages/suporte.html">Suporte</a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/contato.html">Contato</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="contato">
+        <h2>Entre em Contato</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
 
             <button type="submit">Enviar</button>
         </form>
-
-        <div class="social-media">
-            <h2>Siga-nos</h2>
-            <a href="https://www.facebook.com" target="_blank">Facebook</a>
-            <a href="https://www.twitter.com" target="_blank">Twitter</a>
-            <a href="https://www.instagram.com" target="_blank">Instagram</a>
-        </div>
     </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+
+    <div class="social-media">
+        <h2>Siga-nos</h2>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    </div>
+    </div>
+
 </body>
+
 </html>

@@ -1,7 +1,13 @@
+
 * {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 /*animação de surgimento pela esquerda*/
@@ -27,6 +33,7 @@
     width: 100%;
     height:80px;
     display: flex;
+    align-items: center;
 }
 
 /* aqui é a imagem da logo, coloquei a "position: absolute;"
@@ -34,8 +41,6 @@
  .nav-header .logo {
     width: 180px;
     height: 50px;
-    padding-left: 10%;
-    padding-top: 5%;
     transition: 0.4s;
     
 }
@@ -45,9 +50,7 @@
 }
 
 .searchBox {
-    position: absolute;
-    top: 2%;
-    left: 50%;
+    margin-left: 40%;
     transform: translate(-50%, -2%);
     background: #232f3e;
     height: 30px;
@@ -88,7 +91,7 @@
     justify-content: center;
 }
 
-/*essa DIV ta dentro de "botoesHead" ela tem ointuito de organizar melhor
+/*essa DIV ta dentro de "botoesHead" ela tem o intuito de organizar melhor
 essa parte, se mais pra frente quisermos colocar outros botões com categorias
 diferentes podemos colocar outra DIV*/
 .btn-banner {
@@ -128,32 +131,29 @@ diferentes podemos colocar outra DIV*/
 
 /*definição da posição do botão de login*/
 .btn-login {
-    padding-left:75%;
-    padding-top: 2%;
+    margin-left: 20px;
 }
-
 /*estilização do texto do botão de login*/
-.btn-login a {
+.btn-login a, .btn-cadastro a {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
 }
 
 /*animação do botão de login*/
-.btn-login a:hover {
+.btn-login a:hover, .btn-cadastro a:hover {
     color: #000000;
     background: #ffffff;
 }
 
 .btn-carrinho {
-    margin-top: 22px;
     margin-left: 25px;
     width: 30px;
     height: 30px;
 }
 
 .btn-carrinho:hover {
-    margin-top: 21px;
+    margin-top: -1px;
     margin-left: 24px;
     width: 32px;
     height: 32px;
@@ -218,7 +218,7 @@ h2 {
 }
 
 h3 {
-    padding-top: 10px;
+    padding-top: 15px;
 }
 /*Esse form  meche com as caixas de texto*/
 form {

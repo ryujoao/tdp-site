@@ -1,7 +1,13 @@
+
 * {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 /*animação de surgimento pela esquerda*/
@@ -22,37 +28,29 @@
 }
 
 /*essa DIV é a principal do cabeçalho, tá tudo aqui dentro*/
-nav {
+.nav-header {
     background:#000000;
     width: 100%;
     height:80px;
     display: flex;
+    align-items: center;
 }
 
 /* aqui é a imagem da logo, coloquei a "position: absolute;"
  porque ai da pra colocar a logo onde quiser*/
- nav .logo {
+ .nav-header .logo {
     width: 180px;
     height: 50px;
-    padding-left: 10%;
-    padding-top: 5%;
     transition: 0.4s;
     
 }
 /*animação da logo pra qunado passar o mause a imagem sobe um pouco*/
-nav .logo:hover {
+.nav-header .logo:hover {
     padding-top: 4%;
 }
 
-
-
-
-
-
 .searchBox {
-    position: absolute;
-    top: 2%;
-    left: 50%;
+    margin-left: 40%;
     transform: translate(-50%, -2%);
     background: #232f3e;
     height: 30px;
@@ -93,7 +91,7 @@ nav .logo:hover {
     justify-content: center;
 }
 
-/*essa DIV ta dentro de "botoesHead" ela tem ointuito de organizar melhor
+/*essa DIV ta dentro de "botoesHead" ela tem o intuito de organizar melhor
 essa parte, se mais pra frente quisermos colocar outros botões com categorias
 diferentes podemos colocar outra DIV*/
 .btn-banner {
@@ -133,32 +131,30 @@ diferentes podemos colocar outra DIV*/
 
 /*definição da posição do botão de login*/
 .btn-login {
-    padding-left:75%;
-    padding-top: 2%;
+    margin-left: 20px;
 }
 
 /*estilização do texto do botão de login*/
-.btn-login a {
+.btn-login a, .btn-cadastro a {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
 }
 
 /*animação do botão de login*/
-.btn-login a:hover {
+.btn-login a:hover, .btn-cadastro a:hover {
     color: #000000;
     background: #ffffff;
 }
 
 .btn-carrinho {
-    margin-top: 22px;
     margin-left: 25px;
     width: 30px;
     height: 30px;
 }
 
 .btn-carrinho:hover {
-    margin-top: 21px;
+    margin-top: -1px;
     margin-left: 24px;
     width: 32px;
     height: 32px;
@@ -170,39 +166,90 @@ diferentes podemos colocar outra DIV*/
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Div principal dos produtos*/
 .produtos {
-    margin-top: 50px;
+    margin-top: 20px;
     width: 100%;
-    height: 350px;
-    background: #787676;
+    background: #e3e3e3;
+}
+
+/*bloquinhos de produtos*/
+.items {
+    max-width: 1580px;
+    width: 100%;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-around;
 }
 
-.produtos .items {
-    margin-top: 35px;
-    height: 80%;
-    width: 20%;
-    background: #f2f2f2;
+.item p {
+    width: 80%
 }
 
-.produtos img {
-    margin-left: 10%;
-    margin-top: 5%;
-    width: 80%;
-    height: 200px;
-
+.classe-prod {
+    padding-top: 20px;
+    padding-left: 35px;
 }
+
+/*Presta atenção, vai estudar o nosso HTML, "items" é a DIV que contem a DIV "item"
+a DIV "item" é os bloquinhos de cada produtos
+aDiv "items" é a parte maior que é o pai de "item"*/
+.items .item {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+        width: 20%;
+        background: #f2f2f2;
+        border-radius: 20px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        padding-left: 10px;
+}
+
+/*animação dos produtos*/
+.items .item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.75);
+}
+
+.items .preco-produtos {
+    color: blue;
+}
+
+
+
+
+
+
+
+
+/* separação rodapé */
+
+
+
+
+
+
+
 
 footer {
-    background: #000;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer p {
+    text-align: center;
+    padding: 10px 0;
+    background: #000000;
     color: white;
-    font-size: 22px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }

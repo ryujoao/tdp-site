@@ -30,9 +30,14 @@
             </div>
 
             <!--Botão de login-->
+            <div class="btn-cadastro">
+                <a href="/pages/cadastro.html">Cadastrar</a>
+            </div>
+            
             <div class="btn-login">
                 <a href="/pages/login.html">Login</a>
             </div>
+
             <div class="btn-carrinho">
                 <a href="/pages/carrinho.html"><img class="carrinho"
                         src="/img/shopping_cart_market_ecommerce_shop_icon_181465.png"></a>
@@ -43,6 +48,10 @@
         <div class="banner">
             <div class="btn-banner">
                 <ul>
+                    <li>
+                        <a href="../home/home.html">Inicio</a>
+                    </li>
+
                     <li>
                         <a href="/pages/catalogo.html">Catalógo</a>
                     </li>
@@ -82,7 +91,16 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <td>Produto</td>
+                            <tr>
+                                <td>    
+                                <div class="produto">
+                                <img src="https://picsum.photos/100/120" alt="">
+                                <div class="info">
+                                    <div class="name">Nome do produto</div>
+                                    <div class="category">Categoria</div>
+                                </div>
+                                </div>
+                            </td>
                             <td>R$ 120</td>
                             <td>
                                 <div class="qty">
@@ -92,10 +110,14 @@
 
                                 </div>
                             </td>
+                            
                             <td>R$ 240</td>
                             <td>
-                                <button> <i class='bx bx-x'></i> </button>
-                            </td>
+                                <button class="remove"> <i class='bx bx-x'></i> </button>
+                          
+                            </tr>
+                          
+                            
                         </tbody>
                     </table>
                 </section>

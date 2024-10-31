@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto - Micro Saas</title>
     <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/slide.css">
 </head>
 
 <body>
@@ -66,6 +67,39 @@
             </div>
         </nav>
     </header>
+
+    <section class="slider">
+        <div class="slider-content">
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
+            <div class="slide-box primary">
+                <img class="img-desktop" src="/img/image-test.png" alt="slide 1">
+                <!-- <img class="img-mobile" src="/img/image.png" alt="slide-1"> -->
+            </div>
+            <div class="slide-box">
+                <img class="img-desktop" src="/img/image.png" alt="slide 2">
+                <!-- <img class="img-mobile" src="/img/slide-2.jpg" alt="slide 2"> -->
+            </div>
+            <div class="slide-box ">
+                <img class="img-desktop" src="/img/slide-3.jpg" alt="slide 3">
+                <!-- <img class="img-mobile" src="/img/slide-3.jpg" alt="slide 3"> -->
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+    </section>
 
 
     <main>
@@ -170,9 +204,7 @@
                 <img src="/img/logo.png">
             </a>
         </div>
-
     </footer>
-
+    <script src="slide.js"></script>    
 </body>
-
 </html>
