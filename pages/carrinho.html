@@ -12,13 +12,16 @@
 </head>
 
 <body>
-     <!--esta DIV e o cabeçalho do site-->
-     <div class="container">
+    <!--esta DIV e o cabeçalho do site-->
+    <header class="container">
         <nav class="nav-header">
+
             <!--esta imagem será substituida pelo logo que ainda criaremos-->
-            <a href="/home/home.html">
-                <img class="logo" src="/img/logo-prov.png">
-            </a>
+            <div class="logo">
+                <a href="#">
+                    <img class="logo" src="/img/logo-prov.png">
+                </a>
+            </div>
 
             <!--caixa de pesquisa-->
             <div class="searchBox">
@@ -29,29 +32,35 @@
                 </a>
             </div>
 
-            <!--Botão de login-->
-            <div class="btn-cadastro">
-                <a href="/pages/cadastro.html">Cadastrar</a>
-            </div>
-            
-            <div class="btn-login">
-                <a href="/pages/login.html">Login</a>
+            <div class="btn-page-top">
+
+                <ul>
+                    <li>
+                        <a href="/pages/cadastro.html">Cadastrar</a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/login.html">Login</a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/carrinho.html"><img class="carrinho"
+                                src="/img/shopping_cart_market_ecommerce_shop_icon_181465.png"></a>
+                    </li>
+
+                </ul>
             </div>
 
-            <div class="btn-carrinho">
-                <a href="/pages/carrinho.html"><img class="carrinho"
-                        src="/img/shopping_cart_market_ecommerce_shop_icon_181465.png"></a>
-            </div>
         </nav>
 
         <!--nesta DIV estão os botões da partede baixo do site-->
-        <div class="banner">
+        <nav class="banner">
             <div class="btn-banner">
                 <ul>
-                    <li>
-                        <a href="../home/home.html">Inicio</a>
-                    </li>
 
+                    <li>
+                        <a href="../pages/home.html">Inicio</a>
+                    </li>
                     <li>
                         <a href="/pages/catalogo.html">Catalógo</a>
                     </li>
@@ -64,73 +73,78 @@
                     <li>
                         <a href="/pages/suporte.html">Suporte</a>
                     </li>
-
                     <li>
                         <a href="/pages/contato.html">Contato</a>
                     </li>
+
                 </ul>
             </div>
-        </div>
+        </nav>
+    </header>
+
+
+    <div class="titulo">
+        <h1>Seu Carrinho</h1>
     </div>
 
 
-   
-        <div class="main">
-            
-                <section>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Produto</th>
-                                <th>Preço</th>
-                                <th>Quantidade</th>
-                                <th>Total</th>
-                                <th>-</th>
+
+    <div class="main">
+
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th>Total</th>
+                        <th>-</th>
 
 
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>    
-                                <div class="produto">
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="produto">
                                 <img src="https://picsum.photos/100/120" alt="">
                                 <div class="info">
                                     <div class="name">Nome do produto</div>
                                     <div class="category">Categoria</div>
                                 </div>
-                                </div>
-                            </td>
-                            <td>R$ 120</td>
-                            <td>
-                                <div class="qty">
-                                    <button>-</button>
-                                    <span>2</span>
-                                    <button>+</button>
+                            </div>
+                        </td>
+                        <td>R$ 120</td>
+                        <td>
+                            <div class="qty">
+                                <button>-</button>
+                                <span>2</span>
+                                <button>+</button>
 
-                                </div>
-                            </td>
-                            
-                            <td>R$ 240</td>
-                            <td>
-                                <button class="remove"> <i class='bx bx-x'></i> </button>
-                          
-                            </tr>
-                          
-                            
-                        </tbody>
-                    </table>
-                </section>
+                            </div>
+                        </td>
+
+                        <td>R$ 240</td>
+                        <td>
+                            <button class="remove"> <i class='bx bx-x'></i> </button>
+
+                    </tr>
 
 
-            
-            <div>
-                <div class="containerBox2">
-                    <button class="alterarcep">Ir para o pagamento<a href="#"></a></button>
+                </tbody>
+            </table>
+        </section>
 
-                </div>
+
+
+        <div>
+            <div class="containerBox2">
+                <button class="alterarcep">Ir para o pagamento<a href="#"></a></button>
+
             </div>
         </div>
+    </div>
     </div>
 </body>
 

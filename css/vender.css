@@ -1,12 +1,12 @@
 
 * {
-    margin: 0;
+    margin: 0px;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    max-width: 1600px;
+    max-width: 1580px;
     margin: 0 auto;
 }
 
@@ -27,38 +27,32 @@ body {
     margin: 0 auto;
 }
 
-/*essa DIV é a principal do cabeçalho, tá tudo aqui dentro*/
 .nav-header {
-    background:#000000;
-    width: 100%;
-    height:80px;
+    background: #000000;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    height: 80px;
 }
 
-/* aqui é a imagem da logo, coloquei a "position: absolute;"
- porque ai da pra colocar a logo onde quiser*/
- .nav-header .logo {
-    width: 180px;
-    height: 50px;
-    transition: 0.4s;
-    
+.nav-header .logo {
+    max-width: 400px;
+    width: 100%;
 }
-/*animação da logo pra qunado passar o mause a imagem sobe um pouco*/
-.nav-header .logo:hover {
-    padding-top: 4%;
+
+.nav-header .logo img {
+    width: 60%;
 }
 
 .searchBox {
-    margin-left: 40%;
-    transform: translate(-50%, -2%);
+    max-width: 400px;
+    width: 100%;
     background: #232f3e;
     height: 30px;
     padding: 10px;
     border-radius: 30px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .searchText {
@@ -68,8 +62,7 @@ body {
     color: #fff;
     font: 10px;
     line-height: 30px;
-    width: 400px;
-    transition: 0.3s;
+    width: 100%;
 }
 
 .searchButton {
@@ -110,6 +103,8 @@ diferentes podemos colocar outra DIV*/
 
 /*estilização do texto dos botões*/
 .btn-banner ul li a {
+    max-width: 400px;
+    width: 400px;
     color: #fff;
     margin-left: 10px;
     text-decoration: none;
@@ -129,54 +124,108 @@ diferentes podemos colocar outra DIV*/
     color: #215779;
 }
 
-/*definição da posição do botão de login*/
-.btn-login {
+.btn-page-top ul {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+}
+
+.btn-page-top ul li {
+    font-size: 20px;
+    height: 30px;
+    list-style: none;
     margin-left: 20px;
 }
 
-/*estilização do texto do botão de login*/
-.btn-login a, .btn-cadastro a {
+.btn-page-top ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
 }
 
-/*animação do botão de login*/
-.btn-login a:hover, .btn-cadastro a:hover {
-    color: #000000;
-    background: #ffffff;
-}
-
-.btn-carrinho {
-    margin-left: 25px;
+.btn-page-top ul li img {
     width: 30px;
     height: 30px;
 }
 
-.btn-carrinho:hover {
-    margin-top: -1px;
-    margin-left: 24px;
-    width: 32px;
-    height: 32px;
-}
-
-.btn-carrinho img {
-    width: 100%;
-    height: 100%;
-}
 
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
+
+
+
+
+
+
+
+
+
+
+
 
 .header-vender {
     color: black;
     padding: 20px 0;
     text-align: center;
 
+}
+
+.items {
+    max-width: 1580px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.items .item1, .item2, .item3, .item4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 20%;
+    height: 200px;
+    background: #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    padding-left: 10px;
+    text-decoration: none;
+    color: #000000;
+    transition: 0.4s;
+}
+
+.items .item1 img, .item2 img, .item3 img, .item4 img {
+    margin-left: 28%;
+    width: 100px;
+    height: 100px;
+    transition: 0.4s;
+}
+
+.descricao1 p, .descricao2 p, .descricao3 p, .descricao4 p {
+    font-size: 0;
+    transition: 0.4s;
+    align-items: center;
+    width: 100%;
+}
+
+.item1:hover .descricao1 p,
+.item2:hover .descricao2 p,
+.item3:hover .descricao3 p,
+.item4:hover .descricao4 p {
+    font-size: 20px;
+    color: #000000;
+}
+
+.item1:hover,
+.item2:hover,
+.item3:hover,
+.item4:hover {
+    width: 400px;
+    font-size: 15px;
+    height: auto;
+}
+
+.item1:hover img,
+.item2:hover img,
+.item3:hover img,
+.item4:hover img {
+    margin-left: 28%;
+    width: 150px;
+    height: 150px;
 }

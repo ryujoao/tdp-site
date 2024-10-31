@@ -14,10 +14,13 @@
     <!--esta DIV e o cabeçalho do site-->
     <header class="container">
         <nav class="nav-header">
+
             <!--esta imagem será substituida pelo logo que ainda criaremos-->
-            <a href="#">
-                <img class="logo" src="/img/logo-prov.png">
-            </a>
+            <div class="logo">
+                <a href="#">
+                    <img class="logo" src="/img/logo-prov.png">
+                </a>
+            </div>
 
             <!--caixa de pesquisa-->
             <div class="searchBox">
@@ -28,14 +31,25 @@
                 </a>
             </div>
 
-            <!--Botão de login-->
-            <div class="btn-login">
-                <a href="/pages/login.html">Login</a>
+            <div class="btn-page-top">
+
+                <ul>
+                    <li>
+                        <a href="/pages/cadastro.html">Cadastrar</a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/login.html">Login</a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/carrinho.html"><img class="carrinho"
+                                src="/img/shopping_cart_market_ecommerce_shop_icon_181465.png"></a>
+                    </li>
+
+                </ul>
             </div>
-            <div class="btn-carrinho">
-                <a href="/pages/carrinho.html"><img class="carrinho"
-                        src="/img/shopping_cart_market_ecommerce_shop_icon_181465.png"></a>
-            </div>
+
         </nav>
 
         <!--nesta DIV estão os botões da partede baixo do site-->
@@ -44,7 +58,7 @@
                 <ul>
 
                     <li>
-                        <a href="#">Inicio</a>
+                        <a href="/pages/home.html">Início</a>
                     </li>
                     <li>
                         <a href="/pages/catalogo.html">Catalógo</a>
@@ -58,58 +72,49 @@
                     <li>
                         <a href="/pages/suporte.html">Suporte</a>
                     </li>
-
                     <li>
                         <a href="/pages/contato.html">Contato</a>
                     </li>
-                    
+
                 </ul>
             </div>
         </nav>
     </header>
 
-    <section class="slider">
-        <div class="slider-content">
-            <input type="radio" name="btn-radio" id="radio1">
-            <input type="radio" name="btn-radio" id="radio2">
-            <input type="radio" name="btn-radio" id="radio3">
-
-            <div class="slide-box primary">
-                <img class="img-desktop" src="/img/image-test.png" alt="slide 1">
-                <!-- <img class="img-mobile" src="/img/image.png" alt="slide-1"> -->
-            </div>
-            <div class="slide-box">
-                <img class="img-desktop" src="/img/image.png" alt="slide 2">
-                <!-- <img class="img-mobile" src="/img/slide-2.jpg" alt="slide 2"> -->
-            </div>
-            <div class="slide-box ">
-                <img class="img-desktop" src="/img/slide-3.jpg" alt="slide 3">
-                <!-- <img class="img-mobile" src="/img/slide-3.jpg" alt="slide 3"> -->
-            </div>
-
-            <div class="nav-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-            </div>
-
-            <div class="nav-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-            </div>
-        </div>
-    </section>
-
-
     <main>
-        <section class="top-main">
-                <h1>O que é Micro-Saas?</h1>
-                <p>
-                    Micro-SaaS é um serviço de software online que resolve um problema bem específico para um grupo pequeno de pessoas.
-                    Ele é criado por uma ou poucas pessoas e funciona de maneira simples, como uma ferramenta extra que melhora algo que você já usa, como um complemento para um programa.
-                    É como se fosse uma pequena solução feita sob medida para uma necessidade específica, disponível pela internet.
-                </p>
+
+
+        <section class="slider">
+            <div class="slider-content">
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+
+                <div class="slide-box primary">
+                    <img class="img-desktop" src="/img/Captura de tela 2024-10-31 162822.png" alt="slide 1">
+                    <!-- <img class="img-mobile" src="/img/image.png" alt="slide-1"> -->
+                </div>
+                <div class="slide-box">
+                    <img class="img-desktop" src="/img/img-2.png" alt="slide 2">
+                    <!-- <img class="img-mobile" src="/img/slide-2.jpg" alt="slide 2"> -->
+                </div>
+                <div class="slide-box ">
+                    <img class="img-desktop" src="/img/slide-3.jpg" alt="slide 3">
+                    <!-- <img class="img-mobile" src="/img/slide-3.jpg" alt="slide 3"> -->
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
         </section>
 
         <section class="produtos">
@@ -123,32 +128,27 @@
                     <h3>Produto de exemplo</h3>
                     <h4 class="preco-produtos">1000 R$</h4>
                     <p>
-                        Descrição: Lorem ipsum dolor sit amet. Cum saepe accusamus ut magnam
-                        dolores.
+                        Descrição: Lorem ipsum
+                </div>
+                <div class="item">
+                    <h3>Produto de exemplo</h3>
+                    <h4 class="preco-produtos">1000 R$</h4>
+                    <p>
+                        Descrição: Lorem ipsum
                     </p>
                 </div>
                 <div class="item">
                     <h3>Produto de exemplo</h3>
                     <h4 class="preco-produtos">1000 R$</h4>
                     <p>
-                        Descrição: Lorem ipsum dolor sit amet. Cum saepe accusamus ut magnam
-                        dolores.
+                        Descrição: Lorem ipsum 
                     </p>
                 </div>
                 <div class="item">
                     <h3>Produto de exemplo</h3>
                     <h4 class="preco-produtos">1000 R$</h4>
                     <p>
-                        Descrição: Lorem ipsum dolor sit amet. Cum saepe accusamus ut magnam
-                        dolores.
-                    </p>
-                </div>
-                <div class="item">
-                    <h3>Produto de exemplo</h3>
-                    <h4 class="preco-produtos">1000 R$</h4>
-                    <p>
-                        Descrição: Lorem ipsum dolor sit amet. Cum saepe accusamus ut magnam
-                        dolores.
+                        Descrição: Lorem ipsum 
                     </p>
                 </div>
             </div>
@@ -158,32 +158,28 @@
                     <h3>Produto de exemplo</h3>
                     <h4 class="preco-produtos">1000 R$</h4>
                     <p>
-                        Descrição: Lorem ipsum dolor sit amet. Cum saepe accusamus ut magnam
-                        dolores.
+                        Descrição: Lorem ipsum 
                     </p>
                 </div>
                 <div class="item">
                     <h3>Produto de exemplo</h3>
                     <h4 class="preco-produtos">1000 R$</h4>
                     <p>
-                        Descrição: Lorem ipsum dolor sit amet. Cum saepe accusamus ut magnam
-                        dolores.
+                        Descrição: Lorem ipsum 
                     </p>
                 </div>
                 <div class="item">
                     <h3>Produto de exemplo</h3>
                     <h4 class="preco-produtos">1000 R$</h4>
                     <p>
-                        Descrição: Lorem ipsum dolor sit amet. Cum saepe accusamus ut magnam
-                        dolores.
+                        Descrição: Lorem ipsum 
                     </p>
                 </div>
                 <div class="item">
                     <h3>Produto de exemplo</h3>
                     <h4 class="preco-produtos">1000 R$</h4>
                     <p>
-                        Descrição: Lorem ipsum dolor sit amet. Cum saepe accusamus ut magnam
-                        dolores.
+                        Descrição: Lorem ipsum 
                     </p>
                 </div>
             </div>
@@ -205,6 +201,7 @@
             </a>
         </div>
     </footer>
-    <script src="slide.js"></script>    
+    <script src="slide.js"></script>
 </body>
+
 </html>

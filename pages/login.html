@@ -12,10 +12,13 @@
     <!--esta DIV e o cabeçalho do site-->
     <header class="container">
         <nav class="nav-header">
+
             <!--esta imagem será substituida pelo logo que ainda criaremos-->
-            <a href="/home/home.html">
-                <img class="logo" src="/img/logo-prov.png">
-            </a>
+            <div class="logo">
+                <a href="#">
+                    <img class="logo" src="/img/logo-prov.png">
+                </a>
+            </div>
 
             <!--caixa de pesquisa-->
             <div class="searchBox">
@@ -26,75 +29,80 @@
                 </a>
             </div>
 
-            <!--Botão de login-->
-            <div class="btn-cadastro">
-                <a href="/pages/cadastro.html">Cadastrar</a>
-            </div>
-            
-            <div class="btn-login">
-                <a href="/pages/login.html">Login</a>
+            <div class="btn-page-top">
+
+                <ul>
+                    <li>
+                        <a href="/pages/cadastro.html">Cadastrar</a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/login.html">Login</a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/carrinho.html"><img class="carrinho"
+                                src="/img/shopping_cart_market_ecommerce_shop_icon_181465.png"></a>
+                    </li>
+
+                </ul>
             </div>
 
-            <div class="btn-carrinho">
-                <a href="/pages/carrinho.html"><img class="carrinho"
-                        src="/img/shopping_cart_market_ecommerce_shop_icon_181465.png"></a>
-            </div>
         </nav>
 
         <!--nesta DIV estão os botões da partede baixo do site-->
-        <div class="banner">
+        <nav class="banner">
             <div class="btn-banner">
                 <ul>
-                    <li>
-                        <a href="../home/home.html">Inicio</a>
-                    </li>
 
                     <li>
-                        <a href="../pages/catalogo.html">Catalógo</a>
+                        <a href="../pages/home.html">Inicio</a>
                     </li>
                     <li>
-                        <a href="../pages/sobre.html">Sobre</a>
+                        <a href="/pages/catalogo.html">Catalógo</a>
                     </li>
                     <li>
-                        <a href="../pages/vender.html">Vender</a>
+                        <a href="/pages/sobre.html">Sobre</a>
                     </li>
                     <li>
-                        <a href="../pages/suporte.html">Suporte</a>
+                        <a href="/pages/vender.html">Vender</a>
+                    </li>
+                    <li>
+                        <a href="/pages/suporte.html">Suporte</a>
+                    </li>
+                    <li>
+                        <a href="/pages/contato.html">Contato</a>
                     </li>
 
-                    <li>
-                        <a href="../pages/contato.html">Contato</a>
-                    </li>
-                    
                 </ul>
             </div>
-        </div>
+        </nav>
     </header>
 
 
     <!--nesta DIV estão os botões da partede baixo do site-->
     <form>
-    <fieldset class="form-control">
-        <h1>Fazer Login</h1>
-        
-        <div class="form-group">
-            <label for="email">Email: </label>
-            <input type="text" id="email" required>
-        </div>
-        
-        <div class="form-group">
-            <label for="senha">Senha: </label>
-            <input type="text" id="cidade" required>
-        </div>
-        
-        <div class="login-cadastro">
-            <button type="submit">Logar</button>
-            <a href="cadastro.html">Não tenho conta</a>
-        </div>
+        <fieldset class="form-control">
+            <h1>Fazer Login</h1>
 
-    </fieldset>
+            <div class="form-group">
+                <label for="email">Email: </label>
+                <input type="text" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="senha">Senha: </label>
+                <input type="text" id="cidade" required>
+            </div>
+
+            <div class="login-cadastro">
+                <button type="submit">Logar</button>
+                <a href="cadastro.html">Não tenho conta</a>
+            </div>
+
+        </fieldset>
     </form>
-    
+
 </body>
 
 </html>

@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venda</title>
     <link rel="stylesheet" href="/css/vender.css">
 </head>
+
 <body>
-     <!--esta DIV e o cabeçalho do site-->
-     <header class="container">
+    <!--esta DIV e o cabeçalho do site-->
+    <header class="container">
         <nav class="nav-header">
+
             <!--esta imagem será substituida pelo logo que ainda criaremos-->
-            <a href="../home/home.html" >
-                <img class="logo" src="/img/logo-prov.png">
-            </a>
+            <div class="logo">
+                <a href="#">
+                    <img class="logo" src="/img/logo-prov.png">
+                </a>
+            </div>
 
             <!--caixa de pesquisa-->
             <div class="searchBox">
@@ -24,19 +29,25 @@
                 </a>
             </div>
 
-            <!--Botão de login-->
-            <div class="btn-cadastro">
-                <a href="/pages/cadastro.html">Cadastrar</a>
-            </div>
-            
-            <div class="btn-login">
-                <a href="/pages/login.html">Login</a>
+            <div class="btn-page-top">
+
+                <ul>
+                    <li>
+                        <a href="/pages/cadastro.html">Cadastrar</a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/login.html">Login</a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/carrinho.html"><img class="carrinho"
+                                src="/img/shopping_cart_market_ecommerce_shop_icon_181465.png"></a>
+                    </li>
+
+                </ul>
             </div>
 
-            <div class="btn-carrinho">
-                <a href="/pages/carrinho.html"><img class="carrinho"
-                        src="/img/shopping_cart_market_ecommerce_shop_icon_181465.png"></a>
-            </div>
         </nav>
 
         <!--nesta DIV estão os botões da partede baixo do site-->
@@ -45,7 +56,7 @@
                 <ul>
 
                     <li>
-                        <a href="../home/home.html">Inicio</a>
+                        <a href="../pages/home.html">Inicio</a>
                     </li>
                     <li>
                         <a href="/pages/catalogo.html">Catalógo</a>
@@ -59,11 +70,10 @@
                     <li>
                         <a href="/pages/suporte.html">Suporte</a>
                     </li>
-
                     <li>
                         <a href="/pages/contato.html">Contato</a>
                     </li>
-                    
+
                 </ul>
             </div>
         </nav>
@@ -73,5 +83,49 @@
     <header class="header-vender">
         <h1>Venda seu próprio micro-SaaS</h1>
     </header>
+
+    <div class="items">
+        <a href="/pages/cadastro.html" class="item1">
+            <img src="/img/logo.png">
+            <h3>Recursos de Atendimento ao Cliente</h3>
+            <div class="descricao1">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime neque sint quis voluptates, ipsam enim facere magnam odio nulla omnis odit quae voluptatem facilis eum at ipsum dolore eos tempore.
+                </p>
+            </div>
+        </a>
+
+        <a class="item2">
+            <img src="/img/logo.png">
+            <h3>Gestão de Assinaturas e Pagamentos</h3>
+            <div class="descricao2">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel omnis esse quas laudantium magni temporibus, perferendis optio iure illum iusto consequatur aliquam non ab inventore numquam? Cum odio quas quod.
+                </p>
+            </div>
+        </a>
+
+        <a class="item3">
+            <img src="/img/logo.png">
+            <h3>Gestão de Assinaturas e Pagamentos</h3>
+            <div class="descricao3">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error explicabo, possimus quae rerum incidunt sunt debitis accusamus iusto. Rem distinctio quisquam aspernatur possimus minima id veritatis iusto, voluptates error repellat.
+                </p>
+            </div>
+        </a>
+
+        <a class="item4">
+            <img src="/img/logo.png">
+            <h3>Gestão de Assinaturas e Pagamentos</h3>
+            <div class="descricao4">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus quam, ipsam sapiente nemo natus laborum quos ullam omnis mollitia delectus. Pariatur aspernatur illo voluptate quae, ad unde ut corrupti illum.
+                </p>
+            </div>
+        </a>
+
+    </div>
 </body>
+
 </html>

@@ -1,6 +1,6 @@
 
 * {
-    margin: 0;
+    margin: 0px;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -27,41 +27,32 @@ body {
     margin: 0 auto;
 }
 
-/*essa DIV é a principal do cabeçalho, tá tudo aqui dentro*/
 .nav-header {
-    background:#000000;
-    width: 100%;
-    height:80px;
+    background: #000000;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
 }
 
-/* aqui é a imagem da logo, coloquei a "position: absolute;"
- porque ai da pra colocar a logo onde quiser*/
- .nav-header .logo {
-    width: 180px;
-    height: 50px;
-    padding-left: 10%;
-    padding-top: 5%;
-    transition: 0.4s;
-    
+.nav-header .logo {
+    max-width: 400px;
+    width: 100%;
 }
-/*animação da logo pra qunado passar o mause a imagem sobe um pouco*/
-.nav-header .logo:hover {
-    padding-top: 4%;
+
+.nav-header .logo img {
+    width: 60%;
 }
 
 .searchBox {
-    position: absolute;
-    top: 2%;
-    left: 50%;
-    transform: translate(-50%, -2%);
+    max-width: 400px;
+    width: 100%;
     background: #232f3e;
     height: 30px;
     padding: 10px;
     border-radius: 30px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .searchText {
@@ -71,8 +62,7 @@ body {
     color: #fff;
     font: 10px;
     line-height: 30px;
-    width: 400px;
-    transition: 0.3s;
+    width: 100%;
 }
 
 .searchButton {
@@ -113,6 +103,8 @@ diferentes podemos colocar outra DIV*/
 
 /*estilização do texto dos botões*/
 .btn-banner ul li a {
+    max-width: 400px;
+    width: 400px;
     color: #fff;
     margin-left: 10px;
     text-decoration: none;
@@ -132,43 +124,32 @@ diferentes podemos colocar outra DIV*/
     color: #215779;
 }
 
-/*definição da posição do botão de login*/
-.btn-login {
-    padding-left:75%;
-    padding-top: 2%;
+.btn-page-top ul {
+    display: flex;
+    justify-content: center;
+    width: 400px;
 }
 
-/*estilização do texto do botão de login*/
-.btn-login a {
+.btn-page-top ul li {
+    font-size: 20px;
+    height: 30px;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.btn-page-top ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
 }
 
-/*animação do botão de login*/
-.btn-login a:hover {
-    color: #000000;
-    background: #ffffff;
-}
-
-.btn-carrinho {
-    margin-top: 22px;
-    margin-left: 25px;
+.btn-page-top ul li img {
     width: 30px;
     height: 30px;
 }
 
-.btn-carrinho:hover {
-    margin-top: 21px;
-    margin-left: 24px;
-    width: 32px;
-    height: 32px;
-}
 
-.btn-carrinho img {
-    width: 100%;
-    height: 100%;
-}
+
+
 
 
 
@@ -190,47 +171,16 @@ diferentes podemos colocar outra DIV*/
     width: 100%;
     height: 300px;
     animation: surgirEsquerda 0.5s;
-    background-image: url(/img/image.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
     color: #f6f5e9;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
-/*DIV do texto e do titulo da parte de cima do meio*/
-.text-main{
-    /* width: 2000px;
-    display: flex;
-    top: 0;
-    position: absolute;
-    top: 35%;
-    left: 10%; */
-    display: flex;
-}
-
-/*titulo da parte de cima do meio*/
-.text-main h1 {
-    text-decoration: underline;
-    max-width: 600px;
-}
-
-/*o texto de fato da parte de cima do meio*/
-.text-main p {
-    margin-left: 50px;
-    max-width: 500px;
-    max-height: 300px;
-    width: 40%;
-
-}
-
 /*Div principal dos produtos*/
 .produtos {
-    margin-top: 20px;
     width: 100%;
-    background: #e3e3e3;
+    background: #f2f2f2 ;
 }
 
 /*bloquinhos de produtos*/
