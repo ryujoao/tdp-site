@@ -1,207 +1,183 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto - Micro Saas</title>
-    <link rel="stylesheet" href="/css/home.css">
-    <link rel="stylesheet" href="/css/slide.css">
-</head>
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/slide.css" />
+  </head>
 
-<body>
-
+  <body>
     <!--esta DIV e o cabeçalho do site-->
     <header class="container">
-        <nav class="nav-header">
+      <nav class="nav-header">
+        <!--esta imagem será substituida pelo logo que ainda criaremos-->
+        <div class="logo">
+          <a href="#">
+            <img class="logo" src="/img/logo-prov.png" />
+          </a>
+        </div>
 
-            <!--esta imagem será substituida pelo logo que ainda criaremos-->
-            <div class="logo">
-                <a href="#">
-                    <img class="logo" src="/img/logo-prov.png">
-                </a>
-            </div>
+        <!--caixa de pesquisa-->
+        <div class="searchBox">
+          <!--input que permite escrever na caixa de pesquisa e dentro a imagm da lupa-->
+          <input type="text" class="searchText" placeholder="Pesquisar..." />
+          <a href="#" class="searchButton">
+            <img
+              src="/img/loupe-branco.png"
+              alt="Lupa"
+              width="20px"
+              height="20px"
+            />
+          </a>
+        </div>
 
-            <!--caixa de pesquisa-->
-            <div class="searchBox">
-                <!--input que permite escrever na caixa de pesquisa e dentro a imagm da lupa-->
-                <input type="text" class="searchText" placeholder="Pesquisar...">
-                <a href="#" class="searchButton">
-                    <img src="/img/loupe-branco.png" alt="Lupa" width="20px" height="20px">
-                </a>
-            </div>
+        <div>
+            <button class="btn-page-top">
+                Cadastrar
+            </button>
+        </div>
+        <div>
+            <button class="btn-page-top">
+                Login
+            </button>
+        </div>
+      </nav>
 
-            <div class="btn-page-top">
-
-                <ul>
-                    <li>
-                        <a href="/pages/cadastro.html">Cadastrar</a>
-                    </li>
-
-                    <li>
-                        <a href="/pages/login.html">Login</a>
-                    </li>
-
-                    <li>
-                        <a href="/pages/carrinho.html"><img class="carrinho"
-                                src="/img/shopping_cart_market_ecommerce_shop_icon_181465.png"></a>
-                    </li>
-
-                </ul>
-            </div>
-
-        </nav>
-
-        <!--nesta DIV estão os botões da partede baixo do site-->
-        <nav class="banner">
-            <div class="btn-banner">
-                <ul>
-
-                    <li>
-                        <a href="/pages/home.html">Início</a>
-                    </li>
-                    <li>
-                        <a href="/pages/catalogo.html">Catalógo</a>
-                    </li>
-                    <li>
-                        <a href="/pages/sobre.html">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="/pages/vender.html">Vender</a>
-                    </li>
-                    <li>
-                        <a href="/pages/suporte.html">Suporte</a>
-                    </li>
-                    <li>
-                        <a href="/pages/contato.html">Contato</a>
-                    </li>
-
-                </ul>
-            </div>
-        </nav>
+      <!--nesta DIV estão os botões da partede baixo do site-->
+      <nav class="banner">
+        <div class="btn-banner">
+          <ul>
+            <li>
+              <a href="/pages/home.html">Início</a>
+            </li>
+            <li>
+              <a href="/pages/catalogo.html">Catalógo</a>
+            </li>
+            <li>
+              <a href="/pages/sobre.html">Sobre</a>
+            </li>
+            <li>
+              <a href="/pages/vender.html">Vender</a>
+            </li>
+            <li>
+              <a href="/pages/suporte.html">Suporte</a>
+            </li>
+            <li>
+              <a href="/pages/contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
+      <section class="slider">
+        <div class="slider-content">
+          <input type="radio" name="btn-radio" id="radio1" />
+          <input type="radio" name="btn-radio" id="radio2" />
+          <input type="radio" name="btn-radio" id="radio3" />
 
+          <div class="slide-box primary">
+            <img
+              class="img-desktop"
+              src="/img/Captura de tela 2024-10-31 162822.png"
+              alt="slide 1"
+            />
+            <!-- <img class="img-mobile" src="/img/image.png" alt="slide-1"> -->
+          </div>
+          <div class="slide-box">
+            <img class="img-desktop" src="/img/img-2.png" alt="slide 2" />
+            <!-- <img class="img-mobile" src="/img/slide-2.jpg" alt="slide 2"> -->
+          </div>
+          <div class="slide-box">
+            <img class="img-desktop" src="/img/slide-3.jpg" alt="slide 3" />
+            <!-- <img class="img-mobile" src="/img/slide-3.jpg" alt="slide 3"> -->
+          </div>
 
-        <section class="slider">
-            <div class="slider-content">
-                <input type="radio" name="btn-radio" id="radio1">
-                <input type="radio" name="btn-radio" id="radio2">
-                <input type="radio" name="btn-radio" id="radio3">
+          <div class="nav-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+          </div>
 
-                <div class="slide-box primary">
-                    <img class="img-desktop" src="/img/Captura de tela 2024-10-31 162822.png" alt="slide 1">
-                    <!-- <img class="img-mobile" src="/img/image.png" alt="slide-1"> -->
-                </div>
-                <div class="slide-box">
-                    <img class="img-desktop" src="/img/img-2.png" alt="slide 2">
-                    <!-- <img class="img-mobile" src="/img/slide-2.jpg" alt="slide 2"> -->
-                </div>
-                <div class="slide-box ">
-                    <img class="img-desktop" src="/img/slide-3.jpg" alt="slide 3">
-                    <!-- <img class="img-mobile" src="/img/slide-3.jpg" alt="slide 3"> -->
-                </div>
+          <div class="nav-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+          </div>
+        </div>
+      </section>
 
-                <div class="nav-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                </div>
+      <section class="produtos">
+        <div class="classe-prod">
+          <h4><a href="#">produtos famosos</a></h4>
+        </div>
 
-                <div class="nav-manual">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                </div>
-            </div>
-        </section>
+        <div class="items">
+          <div class="item">
+            <h3>Produto de exemplo</h3>
+            <h4 class="preco-produtos">1000 R$</h4>
+            <p>Descrição: Lorem ipsum</p>
+          </div>
 
-        <section class="produtos">
+          <div class="item">
+            <h3>Produto de exemplo</h3>
+            <h4 class="preco-produtos">1000 R$</h4>
+            <p>Descrição: Lorem ipsum</p>
+          </div>
+          <div class="item">
+            <h3>Produto de exemplo</h3>
+            <h4 class="preco-produtos">1000 R$</h4>
+            <p>Descrição: Lorem ipsum</p>
+          </div>
+          <div class="item">
+            <h3>Produto de exemplo</h3>
+            <h4 class="preco-produtos">1000 R$</h4>
+            <p>Descrição: Lorem ipsum</p>
+          </div>
+        </div>
 
-            <div class="classe-prod">
-                <h4><a href="#">produtos famosos</a></h4>
-            </div>
-
-            <div class="items">
-                <div class="item">
-                    <h3>Produto de exemplo</h3>
-                    <h4 class="preco-produtos">1000 R$</h4>
-                    <p>
-                        Descrição: Lorem ipsum
-                </div>
-                <div class="item">
-                    <h3>Produto de exemplo</h3>
-                    <h4 class="preco-produtos">1000 R$</h4>
-                    <p>
-                        Descrição: Lorem ipsum
-                    </p>
-                </div>
-                <div class="item">
-                    <h3>Produto de exemplo</h3>
-                    <h4 class="preco-produtos">1000 R$</h4>
-                    <p>
-                        Descrição: Lorem ipsum 
-                    </p>
-                </div>
-                <div class="item">
-                    <h3>Produto de exemplo</h3>
-                    <h4 class="preco-produtos">1000 R$</h4>
-                    <p>
-                        Descrição: Lorem ipsum 
-                    </p>
-                </div>
-            </div>
-
-            <div class="items">
-                <div class="item">
-                    <h3>Produto de exemplo</h3>
-                    <h4 class="preco-produtos">1000 R$</h4>
-                    <p>
-                        Descrição: Lorem ipsum 
-                    </p>
-                </div>
-                <div class="item">
-                    <h3>Produto de exemplo</h3>
-                    <h4 class="preco-produtos">1000 R$</h4>
-                    <p>
-                        Descrição: Lorem ipsum 
-                    </p>
-                </div>
-                <div class="item">
-                    <h3>Produto de exemplo</h3>
-                    <h4 class="preco-produtos">1000 R$</h4>
-                    <p>
-                        Descrição: Lorem ipsum 
-                    </p>
-                </div>
-                <div class="item">
-                    <h3>Produto de exemplo</h3>
-                    <h4 class="preco-produtos">1000 R$</h4>
-                    <p>
-                        Descrição: Lorem ipsum 
-                    </p>
-                </div>
-            </div>
-        </section>
-
+        <div class="items">
+          <div class="item">
+            <h3>Produto de exemplo</h3>
+            <h4 class="preco-produtos">1000 R$</h4>
+            <p>Descrição: Lorem ipsum</p>
+          </div>
+          <div class="item">
+            <h3>Produto de exemplo</h3>
+            <h4 class="preco-produtos">1000 R$</h4>
+            <p>Descrição: Lorem ipsum</p>
+          </div>
+          <div class="item">
+            <h3>Produto de exemplo</h3>
+            <h4 class="preco-produtos">1000 R$</h4>
+            <p>Descrição: Lorem ipsum</p>
+          </div>
+          <div class="item">
+            <h3>Produto de exemplo</h3>
+            <h4 class="preco-produtos">1000 R$</h4>
+            <p>Descrição: Lorem ipsum</p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="bottom-text">
-            <h1>Titulo lorem ipsum</h1>
-            <p>
-                Lorem ipsum dolor sit amet. Cum saepe accusamus ut magnam
-                dolores sed nisi aliquam qui labore perspiciatis.
-            </p>
-        </div>
-        <div class="bottom-img">
-            <a href="#">
-                <img src="/img/logo.png">
-            </a>
-        </div>
+      <div class="bottom-text">
+        <h1>Titulo lorem ipsum</h1>
+        <p>
+          Lorem ipsum dolor sit amet. Cum saepe accusamus ut magnam dolores sed
+          nisi aliquam qui labore perspiciatis.
+        </p>
+      </div>
+      <div class="bottom-img">
+        <a href="#">
+          <img src="/img/logo.png" />
+        </a>
+      </div>
     </footer>
     <script src="slide.js"></script>
-</body>
-
+  </body>
 </html>

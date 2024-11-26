@@ -1,0 +1,303 @@
+* {
+    margin: 0px;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
+}
+
+body {
+    margin: 0 auto;
+}
+
+/*animação de surgimento pela esquerda*/
+@keyframes surgirEsquerda {
+    from {
+        opacity: 0;
+        translate: -100vw 0;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.nav-header {
+    background: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.nav-header .logo {
+    max-width: 400px;
+    width: 100%;
+}
+
+.nav-header .logo img {
+    width: 60%;
+}
+
+.searchBox {
+    max-width: 400px;
+    width: 100%;
+    background: #232f3e;
+    height: 30px;
+    padding: 10px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+.searchBox:hover {
+    background: #ffffff;
+}
+
+.searchBox:hover :placeholder {
+    color: #6fc5ff50;
+}
+
+.searchBox:hover input {
+    color: #000000;
+}
+
+.searchBox:hover .searchButton {
+    background: #232f3e;
+}
+
+
+.searchText {
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    font: 10px;
+    line-height: 30px;
+    width: 100%;
+}
+
+.searchText::placeholder {
+    color: #ffff;
+}
+
+.searchText:hover::-webkit-input-placeholder {
+    color: #141b23;
+}
+
+.searchButton {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    cursor: default;
+}
+
+.btn-page-top ul {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+}
+
+.btn-page-top ul li {
+    font-size: 20px;
+    height: 30px;
+    list-style: none;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.btn-page-top ul li img {
+    width: 30px;
+    height: 30px;
+}
+
+.btn-page-top button {
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #232f3e;
+    color: #ffffff;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    font-size: 15px;
+}
+
+.btn-page-top button:hover {
+    background-color: #ffffff;
+    color: #215779;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+}
+
+.btn-page-top button:active {
+    background-color: #ffffff;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+}
+
+.btn-page-top .btn-cart {
+    padding: 3.7px 13px;
+    margin-bottom: 50px;
+}
+
+
+/*essa é a DIV dos botões da parte de cima*/
+.banner {
+    width: 100%;
+    height: 40px;
+    background: #232f3e;
+    display: flex;
+    justify-content: center;
+}
+
+/*essa DIV ta dentro de "botoesHead" ela tem o intuito de organizar melhor
+essa parte, se mais pra frente quisermos colocar outros botões com categorias
+diferentes podemos colocar outra DIV*/
+.btn-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-banner ul {
+    list-style: none;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*estilização do texto dos botões*/
+.btn-banner ul li a {
+    border-radius: 100px;
+    max-width: 400px;
+    width: 400px;
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+    width: 70px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.26s;
+}
+
+/*essa é só uma animação para deixar os botões bonitinhos*/
+.btn-banner ul li a:hover {
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+    width: 80px;
+    background-color: #ffffff;
+    color: #215779;
+}
+
+
+
+
+
+
+
+/*separação página login*/
+
+
+
+
+
+
+form {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://img.freepik.com/fotos-premium/um-fundo-preto-com-um-padrao-de-estrelas-e-as-palavras-a-palavra-nele_994023-342727.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+}
+
+.form-control {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 30px;
+    width: 500px;
+    background-image: url(/imagens/WhatsApp\ Image\ 2024-10-01\ at\ 09.56.45.jpeg);
+    color: #fff;
+    height: 300px;
+    margin-top: 60PX;
+}
+
+.form-control:hover {
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.5);
+}
+
+.form-control h1 {
+    text-align: center;
+    padding-top: 5px;
+}
+
+
+.form-group {
+    margin: 15px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    padding-right: 10px;
+}
+
+.form-group input {
+    width: 70%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.form-group input:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.login-cadastro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login-cadastro button {
+    padding: 10px 15px;
+    margin-top: 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.login-cadastro a {
+    margin-top: 25px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.login-cadastro a:hover {
+    color: #0056b3;
+}
+
+.login-cadastro button:hover {
+    background-color: #0056b3;
+}
+

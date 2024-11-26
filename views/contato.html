@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/contato.css">
+    <title>Contato</title>
+</head>
+
+<body>
+
+    <!--esta DIV e o cabeçalho do site-->
+    <header class="container">
+        <nav class="nav-header">
+
+            <!--esta imagem será substituida pelo logo que ainda criaremos-->
+            <div class="logo">
+                <a href="/home">
+                    <img class="logo" src="/img/logo.png">
+                </a>
+            </div>
+
+            <!--caixa de pesquisa-->
+            <div class="searchBox">
+                <!--input que permite escrever na caixa de pesquisa e dentro a imagm da lupa-->
+                <input type="text" class="searchText" placeholder="Pesquisar...">
+                <a href="#" class="searchButton">
+                    <img src="/img/loupe-branco.png" alt="Lupa" width="20px" height="20px">
+                </a>
+            </div>
+
+            <div class="btn-page-top">
+
+                <ul>
+
+                    <li>
+                        <a href="/carrinho"><button class="btn-cart"><img src="/img/cart-regular-24.png"></button></a>
+                    </li>
+                    <li>
+                        <a href="/"><button>Sair da conta</button></a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <!--nesta DIV estão os botões da partede baixo do site-->
+        <nav class="banner">
+            <div class="btn-banner">
+                <ul>
+
+                    <li>
+                        <a href="/home">Início</a>
+                    </li>
+                    <li>
+                        <a href="/catalogo">Catalógo</a>
+                    </li>
+                    <li>
+                        <a href="/sobre">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="/vender">Vender</a>
+                    </li>
+                    <li>
+                        <a href="/suporte">Suporte</a>
+                    </li>
+                    <li>
+                        <a href="/contato">Contato</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="contato">
+        <form action="/contato  " method="post">
+            <fieldset class="form-control">
+                <h1>Entre em Contato</h1>
+    
+                <div class="form-group">
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="mensagem">Mensagem: </label>
+                    <textarea placeholder="Máximo de 500 caracéres" maxlength="500" id="mensagem" name="mensagem" required></textarea>
+                </div>
+    
+                <div class="send-btn">
+                    <button type="submit">Enviar</button>
+                    <a href="/cadastro">Não tenho conta</a>
+                </div>
+    
+            </fieldset>
+        </form>
+    </div>
+    </main>
+
+    <footer>
+        <h1>@2024-SaaSfy Todos os direitos reservados.</h1>
+
+        <p>A inviolabilidade da sua intimidade e vida privada,</p>
+        <p>a proteção e indenização pelo dano material ou moral decorrente de sua violação. </p>
+    </footer>
+
+    <div class="social-media">
+        <h2>Siga-nos</h2>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    </div>
+    </div>
+
+</body>
+
+</html>

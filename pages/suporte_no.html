@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="/css/login.css">
+    <meta nam="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte</title>
+    <link rel="stylesheet" href="/css/suporte.css">
 </head>
 
 <body>
-    
+
     <!--esta DIV e o cabeçalho do site-->
     <header class="container">
         <nav class="nav-header">
@@ -76,29 +76,42 @@
     </header>
 
 
-    <!--nesta DIV estão os botões da partede baixo do site-->
-    <form action="/login" method="post">
-        <fieldset class="form-control">
-            <h1>Fazer Login</h1>
 
-            <div class="form-group">
-                <label for="email">Email: </label>
-                <input type="text" id="email" name="email" required>
+
+     <!-- Aqui começa a tela de suporte-->
+     <div class="head">
+        <h1>Central de Suporte</h1>
+    </div>
+    
+    <main>
+        <section class="faq">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-item">
+                <h3>Como posso redefinir minha senha?</h3>
+                <p>Para redefinir sua senha, clique em "Esqueci minha senha" na página de login.</p>
             </div>
-
-            <div class="form-group">
-                <label for="senha">Senha: </label>
-                <input type="text" id="senha" name="senha" required>
+            <div class="faq-item">
+                <h3>Onde posso encontrar minha fatura?</h3>
+                <p>Você pode encontrar sua fatura na seção "Minha Conta" após fazer login.</p>
             </div>
-
-            <div class="login-cadastro">
-                <button type="submit">Logar</button>
-                <a href="/cadastro">Não tenho conta</a>
+            <div class="faq-item">
+                <h3>Como posso entrar em contato com o suporte?</h3>
+                <p>Você pode usar o formulário abaixo para entrar em contato com nossa equipe de suporte.</p>
             </div>
+        </section>
 
-        </fieldset>
-    </form>
+        <section class="faq">
+            <h2>Entre em contato:</h2>
+            <a href="contato">Contato</a>
+        </section>
 
+        <footer>
+            <p>&copy; @2024-SaaSfy Todos os direitos reservados.</p>
+
+            <p>A inviolabilidade da sua intimidade e vida privada,</p>
+            <p>a proteção e indenização pelo dano material ou moral decorrente de sua violação. </p>
+        </footer>
+    </main>    
 </body>
 
 </html>

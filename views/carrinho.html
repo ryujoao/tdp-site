@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="/css/carrinho.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+
+<body>
+    <!--esta DIV e o cabeçalho do site-->
+    <header class="container">
+        <nav class="nav-header">
+
+            <!--esta imagem será substituida pelo logo que ainda criaremos-->
+            <div class="logo">
+                <a href="/home">
+                    <img class="logo" src="/img/logo.png">
+                </a>
+            </div>
+
+            <!--caixa de pesquisa-->
+            <div class="searchBox">
+                <!--input que permite escrever na caixa de pesquisa e dentro a imagm da lupa-->
+                <input type="text" class="searchText" placeholder="Pesquisar...">
+                <a href="#" class="searchButton">
+                    <img src="/img/loupe-branco.png" alt="Lupa" width="20px" height="20px">
+                </a>
+            </div>
+
+            <div class="btn-page-top">
+
+                <ul>
+
+                    <li>
+                        <a href="/carrinho"><button class="btn-cart"><img src="/img/cart-regular-24.png"></button></a>
+                    </li>
+                    <li>
+                        <a href="/"><button>Sair da conta</button></a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <!--nesta DIV estão os botões da partede baixo do site-->
+        <nav class="banner">
+            <div class="btn-banner">
+                <ul>
+
+                    <li>
+                        <a href="/home">Início</a>
+                    </li>
+                    <li>
+                        <a href="/catalogo">Catalógo</a>
+                    </li>
+                    <li>
+                        <a href="/sobre">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="/vender">Vender</a>
+                    </li>
+                    <li>
+                        <a href="/suporte">Suporte</a>
+                    </li>
+                    <li>
+                        <a href="/contato">Contato</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="titulo">
+        <h1>Seu Carrinho</h1>
+    </div>
+
+
+
+    <div class="main">
+
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto e Serviço</th>
+                        <th>Preço</th>
+
+
+
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="produto">
+                                <img src="https://picsum.photos/100/120" alt="">
+                                <div class="info">
+                                    <div class="name">Nome do produto</div>
+                                    <div class="category">Categoria</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>R$ 50,00/mês</td>
+
+
+                        <td>
+                            <button class="remove"> <i class='bx bx-trash'></i> </button>
+
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </section>
+
+
+
+        <div>
+            <div class="containerBox2">
+
+                <div> <a href="pagamento.html"><button class="pagbutton">Ir para o pagamento</button> </a> </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
